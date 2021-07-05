@@ -24,3 +24,6 @@ SRCREV = "6676f7652249bb20ad51d229012f8a6ef26f67b0"
 S = "${WORKDIR}/git"
 
 inherit cmake
+
+inherit distro_features_check
+REQUIRED_DISTRO_FEATURES = "opengl"
